@@ -45,8 +45,11 @@ var promiseEventsArray = function (queryStr) {
 
 var _getScrapingEvents = function (query) {
     if(!query){
+        // queryが無効の時はこちらが呼ばれる。
         return _stub_axios_get();
     }else{
+        // queryが有効な時はこちらが呼ばれる。
+        // サーバー側での実装が無いとエラーするので注意。
         return events_api.axios.get(
             "./api/v1/show/event",
             {
@@ -60,7 +63,7 @@ var _getScrapingEvents = function (query) {
 }
 var _stub_axios_get = function () {
     return Promise.resolve([
-        { "start" : "2018-03-04", "title" : "#3good" }
+        { "start" : "2018-04-22", "title" : "#3good" }
     ]);
 }
 
