@@ -113,12 +113,16 @@ Network Trash Folder
 Temporary Items
 .apdisk
  
-# Working folder and file
-data
-
 # Local bat file
 *.bat
 
 # Local Windows Executable file
 *.exe
+
+# =========================
+# Others
+# =========================
+
+# Working folder and file
+data
 
