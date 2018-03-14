@@ -62,4 +62,11 @@ data
 # Local Windows Executable file
 *.exe
 
+# =========================
+# Others
+# =========================
+
+# Working folder and file
+data/*.html
+
 
