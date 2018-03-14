@@ -124,5 +124,5 @@ Temporary Items
 # =========================
 
 # Working folder and file
-data
+data/*.html
 
