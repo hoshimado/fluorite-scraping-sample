@@ -62,9 +62,12 @@ var _getScrapingEvents = function (query) {
     }
 }
 var _stub_axios_get = function () {
-    return Promise.resolve([
-        { "start" : "2018-04-22", "title" : "#3good" }
-    ]);
+    return Promise.resolve({
+        "status" : 200,
+        "data" : [
+            { "start" : "2018-04-22", "title" : "#3good" }
+        ]
+    });
 }
 
 
